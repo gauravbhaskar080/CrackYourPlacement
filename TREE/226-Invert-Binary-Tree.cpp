@@ -11,8 +11,15 @@ struct TreeNode
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
+<<<<<<< HEAD
 TreeNode *invertTree(TreeNode *root){
     if (root == NULL) return NULL;
+=======
+TreeNode *invertTree(TreeNode *root)
+{
+    if (root == NULL)
+        return NULL;
+>>>>>>> aeb90db55ffafa9ce08a9b80edf6f58ba2f7eabd
 
     TreeNode *left = invertTree(root->left);
     TreeNode *right = invertTree(root->right);
@@ -23,7 +30,12 @@ TreeNode *invertTree(TreeNode *root){
     return root;
 }
 
+<<<<<<< HEAD
 int main(){
+=======
+int main()
+{
+>>>>>>> aeb90db55ffafa9ce08a9b80edf6f58ba2f7eabd
     TreeNode *root = new TreeNode(4);
     root->left = new TreeNode(2);
     root->right = new TreeNode(7);
